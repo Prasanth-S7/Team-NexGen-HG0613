@@ -22,9 +22,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import MapComponent from "../floodMap"
-import { Input } from "@/components/ui/input"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { PlaceSelector } from "../placeSelector"
 
 export function Dashboard() {
   return (
@@ -47,55 +45,16 @@ export function Dashboard() {
                 href="#"
                 className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
               >
-                {/* <Home className="h-4 w-4" /> */}
                 Flood Visualizer
               </a>
               <a
                 href="#"
                 className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
-              >
-                
+              >                
                 Graph
               </a>
-              {/* <a
-                href="#"
-                className="flex items-center gap-3 rounded-lg bg-muted px-3 py-2 text-primary transition-all hover:text-primary"
-              >
-                <Package className="h-4 w-4" />
-                Products{" "}
-              </a>
-              <a
-                href="#"
-                className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
-              >
-                <Users className="h-4 w-4" />
-                Customers
-              </a>
-              <a
-                href="#"
-                className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
-              >
-                <LineChart className="h-4 w-4" />
-                Analytics
-              </a> */}
             </nav>
           </div>
-          {/* <div className="mt-auto p-4">
-            <Card x-chunk="dashboard-02-chunk-0">
-              <CardHeader className="p-2 pt-0 md:p-4">
-                <CardTitle>Upgrade to Pro</CardTitle>
-                <CardDescription>
-                  Unlock all features and get unlimited access to our support
-                  team.
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="p-2 pt-0 md:p-4 md:pt-0">
-                <Button size="sm" className="w-full">
-                  Upgrade
-                </Button>
-              </CardContent>
-            </Card>
-          </div> */}
         </div>
       </div>
       <div className="flex flex-col">
@@ -159,33 +118,11 @@ export function Dashboard() {
                   Analytics
                 </a>
               </nav>
-              {/* <div className="mt-auto">
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Upgrade to Pro</CardTitle>
-                    <CardDescription>
-                      Unlock all features and get unlimited access to our
-                      support team.
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <Button size="sm" className="w-full">
-                      Upgrade
-                    </Button>
-                  </CardContent>
-                </Card>
-              </div> */}
             </SheetContent>
           </Sheet>
           <div className="w-full flex-1">
             <form>
               <div className="relative">
-                {/* <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" /> */}
-                {/* <Input
-                  type="search"
-                  placeholder="Search products..."
-                  className="w-full appearance-none bg-background pl-8 shadow-none md:w-2/3 lg:w-1/3"
-                /> */}
               </div>
             </form>
           </div>
@@ -209,23 +146,11 @@ export function Dashboard() {
         <main className="flex flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6">
           <div className="flex items-center">
             <h1 className="text-lg font-semibold md:text-2xl">Flood Visualizer</h1>
-            <div><PlaceSelector></PlaceSelector></div>
           </div>
           <div
             className=" items-center justify-center rounded-lg border border-dashed shadow-sm" x-chunk="dashboard-02-chunk-1"
           >
-            {/* hi there */}
             <MapComponent></MapComponent>
-            {/* <div className="flex flex-col items-center gap-1 text-center">
-              <h3 className="text-2xl font-bold tracking-tight">
-                You have no products
-              </h3>
-              <p className="text-sm text-muted-foreground">
-                You can start selling as soon as you add a product.
-              </p>
-              <Button className="mt-4">Add Product</Button>
-            </div>
-          </div> */}
           </div>
         </main>
       </div>

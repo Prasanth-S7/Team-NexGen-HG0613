@@ -6,7 +6,6 @@ import {
   Menu,
   Package,
   Package2,
-  Search,
   ShoppingCart,
   Users,
 } from "lucide-react"
@@ -24,7 +23,7 @@ import {
 import MapComponent from "../floodMap"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
-export function Dashboard() {
+export function Dashboard({screenTitle, children}) {
   return (
     <div className="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr]">
       <div className="hidden border-r bg-muted/40 md:block">
@@ -42,13 +41,13 @@ export function Dashboard() {
           <div className="flex-1">
             <nav className="grid items-start px-2 text-sm font-medium lg:px-4">
               <a
-                href="#"
+                href="/"
                 className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
               >
                 Flood Visualizer
               </a>
               <a
-                href="#"
+                href="/graph"
                 className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
               >                
                 Graph
@@ -83,39 +82,13 @@ export function Dashboard() {
                   href="#"
                   className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
                 >
-                  <Home className="h-5 w-5" />
-                  Dashboard
+                  Flood Visualizer
                 </a>
                 <a
                   href="#"
                   className="mx-[-0.65rem] flex items-center gap-4 rounded-xl bg-muted px-3 py-2 text-foreground hover:text-foreground"
                 >
-                  <ShoppingCart className="h-5 w-5" />
-                  Orders
-                  <Badge className="ml-auto flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
-                    6
-                  </Badge>
-                </a>
-                <a
-                  href="#"
-                  className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
-                >
-                  <Package className="h-5 w-5" />
-                  Products
-                </a>
-                <a
-                  href="#"
-                  className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
-                >
-                  <Users className="h-5 w-5" />
-                  Customers
-                </a>
-                <a
-                  href="#"
-                  className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
-                >
-                  <LineChart className="h-5 w-5" />
-                  Analytics
+                    Graph
                 </a>
               </nav>
             </SheetContent>
@@ -145,12 +118,12 @@ export function Dashboard() {
         </header>
         <main className="flex flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6">
           <div className="flex items-center">
-            <h1 className="text-lg font-semibold md:text-2xl">Flood Visualizer</h1>
+            <h1 className="text-lg font-semibold md:text-2xl">{screenTitle}</h1>
           </div>
           <div
             className=" items-center justify-center rounded-lg border border-dashed shadow-sm" x-chunk="dashboard-02-chunk-1"
           >
-            <MapComponent></MapComponent>
+            {children}
           </div>
         </main>
       </div>

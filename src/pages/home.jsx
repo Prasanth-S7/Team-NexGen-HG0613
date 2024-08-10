@@ -1,6 +1,11 @@
 import { Dashboard } from "../components/ui/dashboard"
-export const Home= (()=>{
-    return(
-        <div><Dashboard></Dashboard></div>
+import MapComponent from "../components/floodMap"
+export const Home = (() => {
+    return (
+        <div>
+            <Dashboard screenTitle="Flood Visualizer">
+                <MapComponent></MapComponent>
+            </Dashboard>
+        </div>
     )
 })

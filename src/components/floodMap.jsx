@@ -7,16 +7,16 @@ const center = [13.0827, 80.2707];
 const coastalPoint = [13.0827, 80.2707];
 
 const floodData = [
-  { lat: 13.0023, lng: 80.2550, rainfall: 60, hour: 1, name: 'Adyar' },
+  { lat: 13.003387, lng: 80.255043, rainfall: 60, hour: 1, name: 'Adyar' },
   { lat: 13.000242, lng: 80.266838, rainfall: 30, hour: 2, name: 'Besant Nagar' },
-  { lat: 13.0047, lng: 80.2637, rainfall: 45, hour: 3, name: 'Mylapore' },
-  { lat: 12.8976, lng: 80.1838, rainfall: 50, hour: 4, name: 'Chrompet' },
-  { lat: 12.9750, lng: 80.2285, rainfall: 55, hour: 5, name: 'Velachery' },
-  { lat: 13.0715, lng: 80.2774, rainfall: 40, hour: 6, name: 'Royapettah' },
-  { lat: 13.0833, lng: 80.2707, rainfall: 60, hour: 7, name: 'Anna Nagar' },
-  { lat: 13.0470, lng: 80.2336, rainfall: 35, hour: 8, name: 'T Nagar' },
-  { lat: 13.0051, lng: 80.2477, rainfall: 65, hour: 9, name: 'Kotturpuram' },
-  { lat: 13.0378, lng: 80.2368, rainfall: 70, hour: 10, name: 'Nungambakkam' }
+  { lat: 13.043030, lng: 80.273918, rainfall: 45, hour: 3, name: 'Mylapore' },
+  { lat: 12.956010, lng: 80.143532, rainfall: 50, hour: 4, name: 'Chrompet' },
+  { lat: 12.975444, lng: 80.220642, rainfall: 55, hour: 5, name: 'Velachery' },
+  { lat: 13.045210, lng: 80.268837, rainfall: 40, hour: 6, name: 'Royapettah' },
+  { lat: 13.089136, lng: 80.209564, rainfall: 60, hour: 7, name: 'Anna Nagar' },
+  { lat: 13.040503, lng: 80.233688, rainfall: 35, hour: 8, name: 'T Nagar' },
+  { lat: 13.018031, lng: 80.241096, rainfall: 65, hour: 9, name: 'Kotturpuram' },
+  { lat: 13.059537, lng: 80.242477, rainfall: 70, hour: 10, name: 'Nungambakkam' }
 ];
 
 // Function to check proximity to the coast
